@@ -8,6 +8,8 @@
 - started Project (studybud) & App (base)
 - urls & templates 
 - database & createsuperuser
+- forms
+- User Login & Register
 
 ## 筆記
 > Models
@@ -21,6 +23,14 @@
 - views:
 
     from .models import Room
+
+> Filter
+- {% url 'home' %}?q={{topic.name}}
+- from django.db.models import Q #動態filter 作為多個search的篩選條件
+
+> User Login & Register
+
+
 
 ## 課程網站
 > https://www.youtube.com/watch?v=PtQiiknWUcI&t=297s&ab_channel=TraversyMedia
