@@ -11,11 +11,7 @@ from .models import Room, Topic, Message
 from .forms import RoomForm
 # Create your views here.
 
-# rooms = [
-#     {'id':1, 'name':'中文假文產生器'},
-#     {'id':2, 'name':'這是什麼鬼東西？'},
-#     {'id':3, 'name':'這能幹嘛？'},
-# ]
+
 
 
 def loginPage(request):
@@ -117,7 +113,9 @@ def createRoom(request):
     if request.method == 'POST':
         form = RoomForm(request.POST)
         if form.is_valid():
-            form.save()
+            room=form.save(commit=False)
+            room.host=request.user
+            room.save()
             return redirect('home')
 
     context = {'form': form}

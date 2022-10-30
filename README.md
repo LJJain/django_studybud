@@ -10,6 +10,8 @@
 - database & createsuperuser
 - forms
 - User Login & Register
+> 2022.10.30
+- setting static files
 
 ## 筆記
 > Models
@@ -28,7 +30,12 @@
 - {% url 'home' %}?q={{topic.name}}
 - from django.db.models import Q #動態filter 作為多個search的篩選條件
 
-> User Login & Register
+> Setting Static
+- settings.py
+    STATICFILES_DIRS = [
+        BASE_DIR / 'static'
+    ]
+
 
 
 
