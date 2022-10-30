@@ -28,11 +28,7 @@
     <form action="" method="post">
         {% csrf_token %}
 
-        <label for="">Username</label>
-        <input type="text" name="username" placeholder="Username" />
-
-        <label for="">Password</label>
-        <input type="password" name="password" placeholder="Password"/>
+        {{form.as_p}}
         
         <input type="submit" value="Register">
     </form>
