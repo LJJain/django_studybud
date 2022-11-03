@@ -12,6 +12,9 @@
 - User Login & Register
 > 2022.10.30
 - setting static files
+> 2022.11.03
+- Edit user profile
+- Mobile Responsiveness(RWD)
 
 ## 筆記
 > Models
