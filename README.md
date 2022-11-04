@@ -15,6 +15,10 @@
 > 2022.11.03
 - Edit user profile
 - Mobile Responsiveness(RWD)
+> 2022.11.04
+- Django REST Framework(API)
+- Customizing User model
+- finish project
 
 ## 筆記
 > Models
